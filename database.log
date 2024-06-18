@@ -1,0 +1,68 @@
+1718714813340|0|statement|select e1_0.etudiant_id,e1_0.ecole_id,e1_0.nom,e1_0.prenom from etudiant e1_0 where e1_0.etudiant_id=8
+1718714813342|0|commit|
+1718714813343|0|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=8
+1718714991358|11|statement|select * from information_schema.sequences
+1718714991448|9|statement|select * from "public"."adresse" where 1=0
+1718714991474|4|statement|select * from "public"."ecole" where 1=0
+1718714991493|5|statement|select * from "public"."etudiant" where 1=0
+1718714991502|2|statement|select * from "public"."projet" where 1=0
+1718715104768|1|statement|insert into etudiant (ecole_id,nom,prenom) values (NULL,'Valat','Thinault')
+1718715104776|0|statement|insert into projet (nom_projet) values ('database')
+1718715104777|0|statement|insert into projet (nom_projet) values ('projet1')
+1718715104779|1|statement|insert into projet (nom_projet) values ('projet2')
+1718715104781|0|statement|insert into projet (nom_projet) values ('projet3')
+1718715104782|0|statement|insert into projet (nom_projet) values ('projet4')
+1718715104798|3|statement|insert into etudiant_projet (etudiant_id,projet_id) values (9,16)
+1718715104800|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (9,17)
+1718715104800|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (9,18)
+1718715104801|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (9,19)
+1718715104802|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (9,20)
+1718715104806|1|commit|
+1718715125407|0|statement|insert into etudiant (ecole_id,nom,prenom) values (NULL,'Bidault','Romain')
+1718715125408|0|statement|insert into projet (nom_projet) values ('database')
+1718715125409|0|statement|insert into projet (nom_projet) values ('projet1')
+1718715125410|0|statement|insert into projet (nom_projet) values ('projet2')
+1718715125413|1|statement|insert into projet (nom_projet) values ('projet3')
+1718715125415|0|statement|insert into projet (nom_projet) values ('projet4')
+1718715125416|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (10,21)
+1718715125417|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (10,22)
+1718715125417|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (10,23)
+1718715125418|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (10,24)
+1718715125418|0|statement|insert into etudiant_projet (etudiant_id,projet_id) values (10,25)
+1718715125419|0|commit|
+1718715156539|1|statement|select e1_1.etudiant_id,e1_1.ecole_id,e1_1.nom,e1_1.prenom from projet p1_0 join etudiant_projet e1_0 on p1_0.projet_id=e1_0.projet_id join etudiant e1_1 on e1_1.etudiant_id=e1_0.etudiant_id where p1_0.projet_id=1
+1718715156564|1|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=1
+1718715168226|0|statement|select e1_1.etudiant_id,e1_1.ecole_id,e1_1.nom,e1_1.prenom from projet p1_0 join etudiant_projet e1_0 on p1_0.projet_id=e1_0.projet_id join etudiant e1_1 on e1_1.etudiant_id=e1_0.etudiant_id where p1_0.projet_id=18
+1718715168229|0|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=9
+1718715500045|1|statement|select e1_0.etudiant_id,e1_0.ecole_id,e1_0.nom,e1_0.prenom from etudiant e1_0
+1718715500058|0|commit|
+1718715500085|1|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id = any ('{"1","2","3","4","6","7","8","9","10"}')
+1718715509855|0|statement|select e1_0.etudiant_id,e1_0.ecole_id,e1_0.nom,e1_0.prenom from etudiant e1_0
+1718715509860|0|commit|
+1718715509863|1|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id = any ('{"1","2","3","4","6","7","8","9","10"}')
+1718715574579|11|statement|select * from information_schema.sequences
+1718715574636|1|statement|select * from "public"."adresse" where 1=0
+1718715574659|3|statement|select * from "public"."ecole" where 1=0
+1718715574678|3|statement|select * from "public"."etudiant" where 1=0
+1718715574685|2|statement|select * from "public"."projet" where 1=0
+1718715610484|2|statement|select e1_0.etudiant_id,e1_0.ecole_id,e1_0.nom,e1_0.prenom from etudiant e1_0
+1718715610537|1|commit|
+1718715610578|2|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id = any ('{"1","2","3","4","6","7","8","9","10"}')
+1718715753053|10|statement|select * from information_schema.sequences
+1718715753116|2|statement|select * from "public"."adresse" where 1=0
+1718715753136|3|statement|select * from "public"."ecole" where 1=0
+1718715753152|2|statement|select * from "public"."etudiant" where 1=0
+1718715753159|1|statement|select * from "public"."projet" where 1=0
+1718715796277|3|statement|select e1_0.etudiant_id,e1_0.ecole_id,e1_0.nom,e1_0.prenom from etudiant e1_0 where e1_0.etudiant_id=8
+1718715796322|1|commit|
+1718715796341|2|statement|select p1_0.etudiant_id,p1_1.projet_id,p1_1.nom_projet from etudiant_projet p1_0 join projet p1_1 on p1_1.projet_id=p1_0.projet_id where p1_0.etudiant_id=8
+1718715856650|13|statement|select * from information_schema.sequences
+1718715856708|2|statement|select * from "public"."adresse" where 1=0
+1718715856727|3|statement|select * from "public"."ecole" where 1=0
+1718715856741|3|statement|select * from "public"."etudiant" where 1=0
+1718715856747|2|statement|select * from "public"."projet" where 1=0
+1718716194762|14|statement|select * from information_schema.sequences
+1718716194827|2|statement|select * from "public"."adresse" where 1=0
+1718716194845|3|statement|select * from "public"."ecole" where 1=0
+1718716194864|3|statement|select * from "public"."etudiant" where 1=0
+1718716194874|3|statement|select * from "public"."projet" where 1=0

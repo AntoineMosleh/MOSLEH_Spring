@@ -8,7 +8,9 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 @Entity
-@Table(name = "ecole")
+@Table(name = "ecole", indexes = {
+        @Index(name = "idx_nom_ecole", columnList = "nom_ecole"),
+})
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
